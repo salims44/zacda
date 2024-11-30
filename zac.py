@@ -41,8 +41,9 @@ def public_key_to_address(public_key):
     return address.decode()
 
 def main():
+    # Corrected start and end values based on the provided range
     start = int("4000000000000000000000000000000000", 16)
-    end = start + 10000000
+    end = int("7fffffffffffffffffffffffffffffffff", 16)
 
     target_pubkey = "02145d2611c823a396ef6712ce0f712f09b9b4f3135e3e0aa3230fb9b6d08d1e16"
     target_address = "16RGFo6hjq9ym6Pj7N5H7L1NR1rVPJyw2v"
